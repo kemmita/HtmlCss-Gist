@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta charset="utf-8">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+<!--again just use the breake tag to make the forms stack ontop of eachother -->
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" placeholder="Address" maxlength="100">
+            <br />
+            <label for="postal code">Postode:</label>
+            <input type="text" name="postal code" id="postal code" placeholder="Postal Code" maxlength="9">
+            <br />
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" placeholder="City" maxlength="30">
+            <p>Please choose your preferred shipping method:</p>
+<!--to create a drop down menu, we use the select tags give it a name and an id. in the drop down menu, you will have options, so simply 
+just use the option tagse here inside of the first option tag give it a value specfic to its meaning, as it will be called on by another 
+web technology -->
+            <select name="shipping" id="shipping">       
+                <option value="7 day shipping">Free 7 Day Shipping</option>
+                <option value="2 day shipping">2 Day Shipping</option>
+                <option value="overnight shipping">Overnight Shipping</option>
+            </select>
+           
+        </form>
+        
+    </body>
+
+
+</htm>

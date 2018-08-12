@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Vendors/css/normalize.css">
+		<link rel="stylesheet" href="Vendors/css/grid.css">
+		<link rel="stylesheet" href="Vendors/css/ionicons.min.css">
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+		<title>4 Seasons Mahtomedi</title>
+	</head>
+	
+	 <body>
+		 <header>
+			 	<nav>
+					<div class="row">
+						<img src="logo.png" class="logo">
+						<ul class="main-nav">
+							<li><a href="#">Food Delivery</a></li>
+							<li><a href="#">How it works</a></li>
+							<li><a href="#">our cities</a></li>
+							<li><a href="#">Sign up</a></li>
+						</ul>
+					</div>
+			 	</nav>
+			 
+				<div class="hero-text-box">
+				<h1>4 Seaons Mahtomedi. <br>Wholesome Family Fun.</h1>
+				<a class="btn"  id="b1" href="#">I'm hungry</a>
+				<a class="btn" id="b2" href="#">Show me more</a>
+				</div>
+		 </header>
+		
+		 <section class="section-features">
+			 <div class="row">
+				 <h2>Get food fast &mdash; not fats food</h2>
+				 <p class="long-copy">
+					 Hello, we're 4 Seasons Mahtomedi, your new go-to classic food dinning experience. We now you stay busy, so stop by, relax, and order something good! 
+				 </p>
+			 </div>
+<!--we will now start using the grid system we downloaded before. We are nested in our main section but not nested within a main container 
+div. we want our grids to be centered so make sure all grid items are placed in a new div with our pre defined class row. Now, inside 
+create an additional div with the class name col "col" was declared in the grid css file we downloaded so that is where we are getting
+that from. we will be utilizing 4 rows so we assign this div span 1-of-4 if you were going to have 3 rows it would be 1-of-3 just check 
+the grid css file for verification. each column will be 23.8% if you multiply that by 4 you will hit 100% sometimes the gird bodys can
+look a bit to close so we can add a word to class, we call ours box-->
+			 <div class="row">
+				 <div class="col span-1-of-4 box">
+					 <i class="ion-ios-infinite-outline"></i>
+					 <h3>Up to 365 days/year</h3>
+					 <p>>e’re so inspired by our fan’s creativity and drive to pursue their passions that we made it our mission to connect them to the experiences that matter most. 
+					 </p>
+				 </div>
+				  <div class="col span-1-of-4 box">
+					   <i class="ion-ios-stopwatch-outline"></i>
+					 <h3>Ready in 20 minutes</h3>
+					 <p>>e’re so inspired by our fan’s creativity and drive to pursue their passions that we made it our mission to connect them to the experiences that matter most. 
+					 </p>
+				 </div>
+				  <div class="col span-1-of-4 box">
+					   <i class="ion-ios-nutrition-outline"></i>
+					 <h3>100% organic</h3>
+					 <p>>e’re so inspired by our fan’s creativity and drive to pursue their passions that we made it our mission to connect them to the experiences that matter most. 
+					 </p>
+				 </div>
+				  <div class="col span-1-of-4 box">
+					   <i class="ion-ios-cart-outline"></i>
+					 <h3>Order Anything</h3>
+					 <p>e’re so inspired by our fan’s creativity and drive to pursue their passions that we made it our mission to connect them to the experiences that matter most. 
+					 </p>
+				 </div>
+			 </div>
+		 </section>
+		 
+	 </body>
+
+</html>
+
+//in css for the additional box class name we created do
+.box{
+	padding: 1%;
+}

@@ -1,0 +1,20 @@
+to use normalize.css got to https://necolas.github.io/normalize.css/ and click download, it will open up a page on the page right click
+and choose save and save it into the file you will use in your project example project/vendors/css/
+
+
+you must place it ontop of you persoanl main.css link
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Vendors/css/normalize.css">
+		<link rel="stylesheet" href="Resources/css/main.css">
+		<title>4 Seasons Mahtomedi</title>
+	</head>
+	
+	<body>
+	</body>
+
+</html>

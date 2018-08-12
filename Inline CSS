@@ -1,0 +1,20 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>InlineCSS</title>
+    </head>
+    <body>
+<!--below we are using inline css that can be coded within pur html brackets. by using the keyword style, we can add color and change size -->
+        <p style="color:green; font-size:200%">A wise man once told me that becoming a wrrior is through the path of pain</p>
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,9 @@
+
+/*set background-size to cover and background postiion to center in order to set the image correctly height: 100vh will take up the whole
+user view*/
+.header{
+	background-image: url(hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}

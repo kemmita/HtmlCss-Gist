@@ -1,0 +1,133 @@
+html***************************************************************
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    
+    <head>
+		<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+        <title>My first blog post</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="blog-post">
+                <h1>My first blog post</h1>
+<!--we have decided to add a seperate element, a paragraph with an id of date. in order to get this to the side of the header, is to set the parent element to position relative, and what is the parent elemnt it will not be the main container div, but the next closest div, in this case div blog-post so blog post will be position relative and the paragraph below will be set to position absolute.-->
+                <p id="date">2025, Aug, 15</p>
+                <h2>This is my first blog post</h2>
+                <p class="main-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoomnifoodncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                </p>
+
+                <a href="http://www.udemy.com" target="_blank">Link to udemy</a>
+                <a href="logo.jpg" target="_blank">HTML logo</a>
+
+                <h2>HTML is amazing</h2>
+                <p class="main-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                </p>
+                <img src="logo.jpg" alt="The HTML5 logo">
+                
+            </div>
+            
+            <div class="other-posts">
+                <div class="other">
+                    The first other blog post
+                </div>
+                
+                <div class="other">
+                    Yet another blog post
+                </div>
+                
+                <div class="other">
+                    The best post ever: read this!
+                </div>
+            </div>
+        
+            <div class="clearfix"></div>
+            
+            <div class="author-box">
+                <img src="author.jpg" alt="Author photo">
+                <p class="author-text">Jackson Gonzalez</p>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+    
+</html>
+
+css******************************************************
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	color: green;
+	margin-bottom: 20px;
+	
+}
+
+h2 {
+	margin-bottom: 10px;
+	
+}
+
+.main-text {
+	margin-bottom: 20px;
+}
+
+.container {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*this must be set to relative so we can set the child object to absolute*/
+.blog-post {
+	position: relative;
+	width: 75%;
+	float: left;
+}
+
+.other-posts {
+
+	width: 25%;
+
+	float: right;
+}
+
+
+
+.author-box {
+	border-top: 1px solid grey;
+	
+}
+
+h2 {
+	color: green;
+}
+
+
+
+/*the position is set to absolute, this means the parent elemnt is set to position relative. we set top to 0 so that there is no space 
+between the top of the parent element and set right to 0, making it up against the right wall of the parent element, if we watned it to 
+hug the left we would set it to left0 and if we wanted it to hit bottom we would use bottom 0. if we did not want it slammed up against 
+the parent wall, we could set right or top or left or bottom to px length to achieve the placement we wish, example top: 20px */
+#date {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

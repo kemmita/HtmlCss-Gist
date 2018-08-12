@@ -1,0 +1,8 @@
+use img tag no div
+
+
+css
+#imgbox{
+    display: block;
+    margin: 0 auto;
+}

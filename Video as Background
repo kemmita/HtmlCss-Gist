@@ -1,0 +1,17 @@
+1. Go to https://www.monzoom.com/ or another free stock video website to download a video
+2. Go to https://video.online-convert.com/convert-to-mp4 and convert your file to mp4 even if the one you downloaded says mp4
+  <!--Add video tags to the body element-->
+      <video autoplay loop muted id="bgvideo">
+          <source src="images/ocean_motion_vb_008_1080p_29_97fps.mp4" type="video/mp4">
+      </video>
+	  
+    
+    
+    
+    /*min height and width set to 100% will ensure that all devices have full screen coverage z-index: -100; will ensure that the video will always be placed behind everything else. */
+#bgvideo{
+	position: fixed;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -100;
+}

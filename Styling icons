@@ -1,0 +1,13 @@
+/*style the icons as you would normal text */
+.big{
+	font-size: 200%;
+	display: block;
+	color: #e67e22
+	
+}
+
+<i class="ion-ios-cart-outline big"></i>
+					 <h3>Order Anything</h3>
+					 <p>we’re so inspired by our fan’s creativity and drive to pursue their passions that we made it our mission to connect them to the experiences that matter most. 
+					 </p>
+				 </div>

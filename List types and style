@@ -1,0 +1,10 @@
+
+<!--this is a description list, a b it like a sub list but looks a little more orginized -->
+<dl>
+	<dt>Germanic</dt>
+	<dd>-English</dd>
+	<dd>-German</dd>
+	<dt>Slavic</dt>
+	<dd>-Russian</dd>
+	<dd>-Serbian</dd>
+</dl>

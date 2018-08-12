@@ -1,0 +1,93 @@
+HTML************************************************
+<!--notice how we are not using div class row to keep everything centered, this section will contain pictures and will take up the entire width of the screen.-->
+		 <section class="section-meals">
+			<ul class="meals-showcase clearfix">
+				<li>
+					<figure class="meal-photo">
+						<img src="1.jpg">
+					</figure>
+				</li>
+				<li>
+					<figure class="meal-photo">
+						<img src="2.jpg">
+					</figure>
+				</li><li>
+					<figure class="meal-photo">
+						<img src="3.jpg">
+					</figure>
+				</li><li>
+					<figure class="meal-photo">
+						<img src="4.jpg">
+					</figure>
+				</li>
+			</ul>
+			 <ul class="meals-showcase clearfix">
+				<li>
+					<figure class="meal-photo">
+						<img src="5.jpg">
+					</figure>
+				</li>
+				<li>
+					<figure class="meal-photo">
+						<img src="6.jpg">
+					</figure>
+				</li><li>
+					<figure class="meal-photo">
+						<img src="7.jpg">
+					</figure>
+				</li><li>
+					<figure class="meal-photo">
+						<img src="8.jpg">
+					</figure>
+				</li>
+			</ul>
+		 </section>
+     CSS*****************************************************
+ 
+ 
+ //clearfix will be declared in the begining of the html file twoards the top make sure this is used
+     .clearfix {zoom: 1}
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+     
+     
+     /*remove bullet points and set width to whole screen*/
+.meals-showcase{
+	list-style: none;
+	width: 100%;
+}
+/*display block will make the line break and float left will line them up side by side there wre 4 pictures in each meals-showcase and above we have the width set to 100% so here for each for items we will set width to 25%*/
+.meals-showcase li{
+	display: block;
+	float: left;
+	width: 25%;
+}
+/*each pic is set to 25% width above for each item but now we need to set the width to 100% of the parent element which is meals-showcase li we have to use overflow hidden becuase below for all images we use transform and scale the image up and transform hidden will hide this. notice how we have this background set to black, that is because the deafult html is background white and we want to create a nice dark look so set background color to black.*/
+.meal-photo{
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+/*the width below will make sure that the whole photo will be seen after all of the width adjustment above. we use the keyword transition so the two .meal-photo img and .meal-photo img:hover will take .5 seconds to work the background color above is black so we use opacity here to get 70% of the color black to create a tinted effect. opacity transition is set to 5s within the transition keyword*/
+.meal-photo img{
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+/*this will make the image shrink when hovered on. once the hover is completed it will go back to opcaity 1, meaning 100% black*/
+.meal-photo img:hover{
+	opacity: 1;
+	transform: scale(1.05);
+}
+/*there was an unatural look to the spacing between our info section and the pictures so we took the whole section using the class id and set the padding to 0.*/
+.section-meals{
+	padding: 0;
+}

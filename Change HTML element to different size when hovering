@@ -1,0 +1,36 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>iframes</title>
+    <style>
+        .ninja{
+            background-color: rgba( 24, 13, 175, 0.775 );
+            color: white;
+            height: 100px;
+            width: 100px;
+/*by using transtion, we can have a div change size and even rotate. use the keyword transition: width and set that for 1 to 3 seconds. 
+once you have done that you will need to create and additiona ninja class here in style that is declared with a colon and hover keyword 
+inside of that hover class, you can set the width size it will transition to once hovered over.*/
+            transition: width 1s;
+        }
+        .ninja:hover{
+            width: 300px;
+        }
+
+     
+    
+    </style>
+
+</head>
+    <body>
+        <div class="ninja">
+        <p>Ninja were created in fuedal Japan</p>
+           
+        </div>
+        
+    </body>
+</html>
+    
+    
+   

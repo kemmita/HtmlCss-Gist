@@ -1,0 +1,39 @@
+<table>
+<tr><th>Company</th><th>Size</th><th>Location</th></tr>
+<tr><td>BestBuy</td><td>55,000 Employees</td><td>Burnsville MN</td></tr>
+<tr><td>caravam</td><td>20,000 Employees</td><td>St. Paul MN</td></tr>
+<tr><td>Sputnick</td><td>1,000 Employees</td><td>Jameson MN</td></tr>
+<tr><td>Restf</td><td>2,000 Employees</td><td>Compton MN</td></tr>
+<tr><td>Chich</td><td>50 Employees</td><td>Selvine MN</td></tr>
+
+</table>
+
+
+
+
+
+table{
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left:auto;
+	margin-right: auto;
+}
+table, td, th{
+	text-align: left;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+th{
+	background: #0f0f0f;
+	color: white;
+}
+table{
+	width: 100%;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+

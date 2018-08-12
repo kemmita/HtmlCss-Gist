@@ -1,0 +1,10 @@
+this was needed for css query because nackground videos cannot be played on mobile
+we use the body selector and use an image from the net. no-repeat center center fixed keeps it 
+in the right place but it is	background-size: cover; that refits the size of the image to the phone.
+
+	body{
+    background: url(images/stefanus-martanto-setyo-husodo-18382.jpg) no-repeat center center fixed;
+		background-size: cover;
+		
+		
+}

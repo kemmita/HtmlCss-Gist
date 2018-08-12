@@ -1,0 +1,14 @@
+/*we want the icons to be alligned with eachother so we assign them as inline blocks so that we can add some width this also allows us to use text-align and center the icons */
+.icon-small{
+	display: inline-block;
+	width: 30px;   
+	text-align: center;
+	color: #e67e22;
+	font-size: 120%;
+/*below is the secret to allign text and icons*/
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+
+	
+}

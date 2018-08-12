@@ -1,0 +1,3 @@
+by using mailto: we can have our link redirect a user to an email application with our email address alreayd filled in 
+****************
+<a class="more-btn" href="mailto:leads@relevant.systems?subject=Relevant%Systems%20Updates" data-toggle="tooltip" data-placement="bottom" title="Contact leads@relevant.systems">Sign Up for Updates</a>

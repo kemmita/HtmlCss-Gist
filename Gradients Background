@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>iframes</title>
+    <style>
+/*background gradient allows you to move from one color to the nex t for example blue to white and that will be ion the form of top to bottom. there are many differnt web engines, chrome, firexfox and etc... so make sure to add all gradients below just to be safe.*/
+        .ninja{
+            color: white;
+            height: 100px;
+            width: auto;
+/*notice how we can add to bottom right making the colors change from boaring top to bottom, to side to side and alof other ways of the colors can fade and move*/
+        background: linear-gradient(to bottom right,blue,white,orange);
+/*
+            background: -webkit-linear-gradient(blue,white);
+            background:  -o-linear-gradient(blue,white);
+            background: -maz-linear-gradient(blue,white);
+*/
+                
+        }
+        .Viking{
+            color: white;
+            height: 100px;
+            width: auto;
+/*radial-gradient is more of a circle visual effect*/
+            background: radial-gradient(white, blue,orange);
+        }
+        .samurai{
+            color: white;
+            background-color: rgba( 164, 161, 24, 0.597 );
+            height: 100px;
+            width: auto;
+        }
+    
+    </style>
+
+</head>
+    <body>
+        <div class="ninja">
+        <p>Here lives a great Ninja</p>
+           
+        </div>
+         <div class="Viking">
+        <p>Here lives a great Viking</p>
+            
+        </div>
+         <div class="Samurai">
+        <p>Here lives a great Samurai</p>
+             
+        </div>
+        
+    </body>
+</html>
+    

@@ -1,0 +1,51 @@
+<!--this is nested in the header tag there is no main container div tag we use the html tags nav and nest our class row inside, as our class row har pre determined postioning our first item in the nav area was a logo we created. the create an unordered list and add your list items but make sure to make them all links. -->
+			 	<nav>
+					<div class="row">
+						<img src="logo.png" class="logo">
+						<ul class="main-nav">
+							<li><a href="#">Food Delivery</a></li>
+							<li><a href="#">How it works</a></li>
+							<li><a href="#">our cities</a></li>
+							<li><a href="#">Sign up</a></li>
+						</ul>
+					</div>
+			 	</nav>
+        
+        
+        
+  /*all we had to do to our logo was float it left as it is sharing space with the menu items and they will be floated right*/
+.logo{
+	float: left;
+}
+/*float right as to stay away from the loggo and list style is set to none to remove bullet points*/
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+/*to give it a navigation look grab the main nav class and have it followed by li so all list items will do the same in order for them to sit on the same line set display to inline block*/
+.main-nav li{
+	display: inline-block;
+	margin-left: 40px;
+	
+}
+/*this is how the links will look after they have been visitied and before they have been clicked that is why we specify link and visited text-decoration: none; removes the line from the bottom of the link. font-size: 90%; this is because we want it to be 18px and if we remember, font is set to 20px which is 100% so just divied 18 by 20 to get the percentage you should use*/
+.main-nav li a:link,
+.main-nav li a:visited{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 90%;
+	transition: border-bottom 0.2s;
+}
+/*padding bottom is helping set the bottom border a little farther down.*/
+.main-nav li a:hover,
+.main-nav li a:active
+{
+	color: #e67e22;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	
+}      
+        
+ 

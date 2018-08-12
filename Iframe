@@ -1,0 +1,23 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>iframes</title>
+
+</head>
+    <body>
+ <!--iframe is an amazing new html5 feature that allows us to create little frames or boxes where we can include images,text, or even videos. -->
+        <iframe src="images.html" width="325" height="300"></iframe>
+<!--we created an additional ifram called myiframe, we then created a paragraph with a nested link. isnide of the link we refrenced a webiste and set the target to myiframe, so instead of target opening an additional tab, it simple loads the refrenced website inside of the iframe. -->
+        <iframe name="myiframe" width="425" height="300"></iframe>
+        <p><a href="https://www.wikipedia.org/" target="myiframe"> link</a></p>
+        <br />
+<!--all of this ifframe code below used to host a youtube video can be found on the youtube oage of the vieo, click share, and the embedded to get all of the code below.-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4yRBeOIexqk" allowfullscreen ></iframe>
+
+        
+    </body>
+</html>
+    
+    
+   

@@ -1,0 +1,13 @@
+/*to make paragraphs more visually pleasing, use font size adjustmetn and line-height*/
+.box p{
+	font-size: 90%;
+	line-height: 145%;
+}
+//center paragraph
+p{
+	text-align: center;
+}
+//make paragraph look nicer
+p{
+	text-align: justify;
+}

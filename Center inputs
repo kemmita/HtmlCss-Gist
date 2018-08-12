@@ -1,0 +1,13 @@
+	  
+In order to center an input field, create a div and using the name of that div class, use text-align center-->
+	  <div class="row">
+		  <div class="input">
+		  <input type="color">
+			  </div>
+	  </div>
+    
+    
+    .input{
+	text-align: center;
+}
+    

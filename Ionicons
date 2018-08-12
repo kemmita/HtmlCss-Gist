@@ -1,0 +1,8 @@
+to use ionicons go to http://ionicons.com/ and download the file inside of that file we will need 2 files the first will be 
+ionicons.min.css place that into a css folder preferably a vendor css folder 
+place this in your header <link rel="stylesheet" href="Vendors/css/ionicons.min.css">
+
+place this in your body 
+<i class="ion-ios-infinite-outline"></i>
+
+you will get the class name from the website, when you find a logo you like, hover and it will show you the icon code.
