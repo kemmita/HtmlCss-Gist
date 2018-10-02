@@ -1,0 +1,33 @@
+1. Html
+
+
+   <header class="header">
+            <div class="logo-box">
+                <img src="img/logo-white.png" alt="White-Logo" class="logo">
+            </div>
+            <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">OUTDOORS</span>
+                <span class="heading-primary-sub">IS WHERE LIFE HAPPENS</span>
+            </h1>
+            </div>
+   </header>
+   
+   
+2. CSS
+
+
+// We need a parent element to use position absolute below with our element we wish to center, so if we need to, we may create a div or
+smoething so that we can declare the position as relative
+.header{
+  position: relative;
+}
+
+
+// Below we set the position to absolute and and the top and left to 50% and then use transform translate to contradict it.
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
