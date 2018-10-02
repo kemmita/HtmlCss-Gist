@@ -1,0 +1,76 @@
+1. We can use really any css property within keyframes, but it is optemized for opcaity and transform. The effect will make one span 
+comes in from the left and the opther from the right.
+
+2. HTML
+
+
+    <body>
+        <header class="header">
+            <div class="logo-box">
+                <img src="img/logo-white.png" alt="White-Logo" class="logo">
+            </div>
+            <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">OUTDOORS</span>
+                <span class="heading-primary-sub">IS WHERE LIFE HAPPENS</span>
+            </h1>
+            </div>
+        </header>
+    </body>
+    
+    
+3. CSS
+
+
+
+.heading-primary{
+    color: white;
+    align-content: hidden; // use this so the anime does not jump when ending.
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s; // calling animation and duration
+    animation-timing-function:ease-out; // Adding easeout effect.
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s;
+    animation-timing-function:ease-out;
+}
+
+// As I stated above, opacity and transform are the key css properties of css keyframes.
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px); // translatex will help it move from the side, so use tranalatey if you want to have bottom or top effects
+    }
+    80%{
+        transform: translateX(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
