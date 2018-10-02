@@ -1,0 +1,6 @@
+1. Adding the code below will help your site responde better to all browsers
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
