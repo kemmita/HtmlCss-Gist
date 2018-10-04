@@ -1,0 +1,9 @@
+1. Box Shadow allows you to add shadow effect to your elements. If you choose to use this, you may consider using the 
+css selector transform and the css function translateY, you can add a bit of an effect to the element that is having
+a shadow appended.
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+}
