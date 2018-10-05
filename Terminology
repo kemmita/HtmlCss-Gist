@@ -1,0 +1,5 @@
+1. ".main" is the selector. Within the brackets is called the decleration block. "color: blue;" is called a Decleration.
+Within the decleration, "color" is the property and "blue" is the declared value.
+.main{
+color: blue;
+}
