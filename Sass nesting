@@ -1,0 +1,33 @@
+1. Below is the markup
+  <ul class="navigation">
+    <li>
+      <a href="#">About us</a>
+    </li>
+     <li>
+      <a href="#">Pricing</a>
+    </li>
+     <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+  
+  
+  2. notice how we can use SASS to nest our styling as it is nested in the markup
+  
+  
+  .navigation{
+  list-style: none;
+  float:left;
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    &:first-child {
+      margin:0;
+    }
+    a{
+      text-decoration:none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+    }
+  }
+}
