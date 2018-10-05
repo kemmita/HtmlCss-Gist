@@ -1,0 +1,40 @@
+1. We want to float navigation left and buttons right, by doing so the width of the elements will collapse and things such 
+as background color will not be maintained, to fix this use clear fix.
+
+nav{
+  background-color: blue;
+}
+// both elements below are nested within nav and tharfore when they use the float, the width will collapse and the bg color above will not work.
+add clearfix class to nav element in markup to fix this
+.button{
+  float: right;
+}
+
+.navigation{
+  float:left;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table
+}
+
+
+<nav class="clearfix">
+  <ul class="navigation">
+    <li>
+      <a href="#">About us</a>
+    </li>
+     <li>
+      <a href="#">Pricing</a>
+    </li>
+     <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+<div class="button">
+  <a href="#" class="btn-main">Sign Up</a>
+  <a href="#" class="btn-hot">Get a Quote</a>
+</div>
+  </nav>
