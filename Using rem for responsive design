@@ -1,0 +1,27 @@
+1. We can use rem to help us with resposnive desgin. this will keep us from having to write several different css querie size manipulation
+code.
+2. Use the html decleration box in your css file. Selecting to use font-size at 10 px is a personal decision, it can work differently.
+
+
+/* By declaring our font size to 10px within the html decleration block we will be able to use rem throught the remainder
+    of the CSS code. If we have a size value that we would typically use px for, we will now use rem, 10px = 1 rem. So whatever
+    the px value is, divide by 10. If we have padding of 30px, it would be 10/3 which = 3rem */
+    
+html{
+  font-size: 10px;
+}
+
+.heading-primary-main{
+    font-size: 6rem; // If you look at the coment above, you will see that this would translate to 60px
+}
+
+
+3. So now when the time does come to write css queries we need only to worry about chaning one selector, the property within and the 
+decleration value. See below code for example
+
+
+@media only screen and (max-width: 600px) {
+   html{
+  font-size: 8px;
+}
+}
