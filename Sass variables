@@ -2,8 +2,13 @@
 
 // sass var
 $color-primary: #f9ed69;
+$width-button: 30px;
 
 nav{
   margin: 30px;
   background-color: $color-primary; // using sass var
+}
+.button{
+  float: right;
+  width: $width-button;
 }
