@@ -1,15 +1,13 @@
 1. We can use rem to help us with resposnive desgin. this will keep us from having to write several different css querie size manipulation
 code.
 2. Use the html decleration box in your css file. Selecting to use font-size at 10 px is a personal decision, it can work differently.
-
-
-/* By declaring our font size to 10px within the html decleration block we will be able to use rem throught the remainder
-    of the CSS code. If we have a size value that we would typically use px for, we will now use rem, 10px = 1 rem. So whatever
-    the px value is, divide by 10. If we have padding of 30px, it would be 10/3 which = 3rem */
-    
-html{
-  font-size: 10px;
-}
+By declaring our font size to 10px within the html decleration block we will be able to use rem throught the remainder of the CSS code. 
+If we have a size value that we would typically use px for, we will now use rem, 10px = 1 rem. So whateverthe px value is, divide by 10. 
+If we have padding of 30px, it would be 10/3 which = 3rem. 62.5% is 10/16. 16px = 100% by default on all browsers but we want ours to be 
+10 px so that all of our rem calculations will work. So we will change 10px to 62.5% so that users zoom in and out continues to work. 
+    html{
+    font-size: 62.5%;
+    }
 
 .heading-primary-main{
     font-size: 6rem; // If you look at the coment above, you will see that this would translate to 60px
@@ -21,7 +19,7 @@ decleration value. See below code for example
 
 
 @media only screen and (max-width: 600px) {
-   html{
-  font-size: 8px;
-}
+    html{
+   font-size: 37.5%;
+ }
 }
