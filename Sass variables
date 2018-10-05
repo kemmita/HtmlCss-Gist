@@ -1,0 +1,9 @@
+1. Below is how you would create and use a sass var
+
+// sass var
+$color-primary: #f9ed69;
+
+nav{
+  margin: 30px;
+  background-color: $color-primary; // using sass var
+}
