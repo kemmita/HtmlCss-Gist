@@ -1,0 +1,19 @@
+1. Navigate to your program file and open the terminal in this location.
+2. Run command "npm init" this will create a package.json file
+3. Run command "npm install node-sass --save-dev"
+4. Setup is now done lets now see how to compile the sass code.
+5. In the same file higharchy create new directory called sass
+6. Within the sass directory create a new file called main.scss
+7. Go to package.json and find the "scripts" section. Create a script that will compile the sass code on command.
+
+  "scripts": {
+    "c:s": "node-sass sass/main.scss css/style.css -w"
+  },
+ 
+8. Run the command "npm run c:s" notice how the c:s is what we defined above in our script.
+9. You should see a success msg "Rendering Complete"
+10. Optional, but awesome :) open up another terminal while the sass terminal is still running and 
+run command "npm install live-server -g"
+11. Then run command "live-server" if you do not have both terminals running, it will not work.
+
+
