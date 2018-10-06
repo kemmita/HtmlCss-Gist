@@ -1,0 +1,39 @@
+1. 7 in i is a architecure usded to split up you sass code and make it more maintainable. The first and most important file lies within
+the main sass direcotry and this file is called main.scss. Within main.scss we will include all of our imports.
+
+// main.scss
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/header";
+
+@import "pages/home";
+
+2. Using "base/animations" import for example, we will create a new directory nested within sass and name it base, within base we will 
+create a new file called animations.scss all of the animations for this application will be stored in this file and than processed in
+main.scss using the @import decleration.
+
+// animations.scss
+
+@keyframes moveInLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+  80%{
+      transform: translateX(1rem)
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
