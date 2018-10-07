@@ -1,0 +1,21 @@
+1. A SASS Mixin is a set of style that is declare like a method in OOP and can be called on throughout the sass code using "@include"
+
+//Below we create the mixin
+@mixin clearfix {
+  &::after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+}
+
+//Below we call and use the mixin
+.row{
+  max-width: $grid-width; 
+  background-color: grey;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+  @include clearfix;     <------HERE
+}
