@@ -1,0 +1,95 @@
+1. Split Screen 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="first">
+<h1>hi</h1>
+  </section>
+  <section class="second">
+      <h1>hi</h1>
+  </section>
+  </body>
+</html>
+
+*{
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+.first{
+    height: 50vh; 
+    background-color: rebeccapurple;
+    width: 50%;
+    float: left;
+
+}
+.second{
+    height: 50vh;
+    background-color: black;
+    width: 50%;
+    float: right;
+}
+
+2. 4 square box screen
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="first">
+<h1>hi</h1>
+  </section>
+  <section class="second">
+      <h1>hi</h1>
+  </section>
+    <section class="third">
+      <h1>hi</h1>
+  </section>
+    <section class="fourth">
+      <h1>hi</h1>
+  </section>
+  
+  </body>
+</html>
+
+*{
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+.first{
+    height: 50vh; 
+    background-color: rebeccapurple;
+    width: 50%;
+    float: left;
+
+}
+.second{
+    height: 50vh;
+    background-color: black;
+    width: 50%;
+    float: right;
+}
+.third{
+     height: 50vh; 
+    background-color: chocolate;
+    width: 50%;
+    float: left; 
+}
+.fourth{
+     height: 50vh;
+    background-color: cadetblue;
+    width: 50%;
+    float: right;
+}
