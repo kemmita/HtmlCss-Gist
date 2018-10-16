@@ -1,0 +1,33 @@
+1. Sections are used to seperate sections If we want an entire page view, use 100vh
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="first">
+      <div class="main">
+          <h1>hello</h1>
+      </div>
+  </section>
+  <section class="second">
+      
+  </section>
+  
+  </body>
+</html>
+
+2. CSS
+*{
+    margin: 0;
+}
+.first{
+    height: 100vh; 
+    background-color: rebeccapurple;
+}
+.second{
+    height: 100vh;
+    background-color: cadetblue;
+}
