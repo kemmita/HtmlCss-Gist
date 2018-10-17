@@ -1,0 +1,16 @@
+1. If we use more than one transform ona single element, they must be contained within the same line and if you do add hover effect,
+the hover will need to contain both trasnform property values.
+
+2. Normal state
+
+  .story__img {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s; }
+    
+    
+3. Hover state
+
+ .story:hover .story__img {
+    transform: translateX(-4rem) scale(1); }
