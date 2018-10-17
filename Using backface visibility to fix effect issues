@@ -1,0 +1,19 @@
+1. We use backface visibility to fix an issue with a transform or sometype of animation genereated automoaticaly or by hover
+
+  &__caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; // Notice it is placed within the transition decleration block and not trasnform.
+  }
+  &:hover &__caption{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
