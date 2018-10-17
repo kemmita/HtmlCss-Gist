@@ -1,0 +1,6 @@
+1. We can use the new css filter property to add different effects to an image or something of the like!
+
+  &:hover &__img{
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
