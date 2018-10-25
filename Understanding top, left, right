@@ -1,0 +1,15 @@
+1. The parent element is already set to position relative and I will not show that code below.
+
+2. Using position absoulte in this case will result in us having our element displayed to the top right corner. We want to position our
+element for where it should lie in relation to the parent elements dimensions.
+
+ .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    font-size: 3rem;
+    top: 0; // This will sit at the exact top that was given to us, keeping in mind the parents design dimensions.
+    right: 1.5rem; // from the right we will have 15px margin pushing it off the right side of the parent element.
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s; 
+    }
