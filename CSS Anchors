@@ -1,0 +1,15 @@
+1. CSS Anchors allow you to naviagte to a specific location on the webiste.
+
+2. The button below will naviagte to a section on the page titled section-tours
+
+<a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+
+
+
+   <section class="section-tours" id="section-tours">
+              <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Most Popular Tours
+                    </h2>
+              </div>
+    </section>
