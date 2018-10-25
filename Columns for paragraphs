@@ -1,0 +1,20 @@
+1. There is a new CSS feature that allows us to take a paragraph and turn it into multiple paragraph columns.
+2. HTML
+
+  <p class="popup__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore nihil ullam quas, rerum praesentium. Perspiciatis exercitationem quo minima adipisci corporis quibusdam culpa voluptatum vero laboriosam, maxime, assumenda ratione eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem corrupti hic asperiores provident, eius veritatis. Sed expedita asperiores officiis quasi laboriosam labore quis voluptatibus, illum quo blanditiis nobis. Perferendis, quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+
+3. CSS
+
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
