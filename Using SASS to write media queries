@@ -1,18 +1,19 @@
 1. In our mixin file we will create a mixin and use if statements to help us jump from screen size to screen size.
 
 // 1em = 16px, we must use em for media queries. If we have a max width of 600px, we would do 600 / 16 = 37.5em so divide all px by 16
+// It does matter whic order these are placed, you will want to place the smaller px queries twoards the bottom of the mixin
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 37.5em) { @content }; //600px
-  }
-  @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) { @content }; //900px
-  }
   @if $breakpoint == tab-land {
     @media (max-width: 75em) { @content }; //1200px
   }
+   @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content }; //900px
+  }
+   @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content }; //600px
+  }
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) { @content }; //1800px
+    @media (min-width: 112.5em) { @content }; //1800px //This has different rules than the rules above, ignore for now.
   }
 }
 
