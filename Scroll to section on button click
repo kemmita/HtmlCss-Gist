@@ -1,0 +1,19 @@
+1. Html
+
+// Button that will cause the scroll action
+<a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+
+// Section the page will scroll too
+<section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Start eating healthy today</h2>
+            </div>
+</section>
+
+3. jQuery, you will need to include a jQuery CDN for this to work.
+
+$(function(){
+   $('.js--scroll-to-plans').click(function (){
+      $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
+   });
+});
