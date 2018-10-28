@@ -1,16 +1,17 @@
-To keep a footer glued to the bottom of the page use css property bottom and set it to 0 like so
-
+/*style footer*/
 .footer{
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+    background-color: #292929;
+    font-size: 15px;
+    padding: 10px 0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px;   /* Height of the footer */
 }
 
-
-also make sure that html is set to 
-/*html must have position relative so we can give our footer a position absolute.*/
-html{
-	position: relative;
-	min-height: 100%;
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
 }
