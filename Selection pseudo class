@@ -1,0 +1,6 @@
+1. The css selection pseudo class will allow us to change how text looks when a user selects text to copy.
+
+::selection{
+  background-color: $color-primary;
+  color: $color-white;
+}
