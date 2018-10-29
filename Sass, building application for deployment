@@ -1,0 +1,70 @@
+1. Go to package.json and find the "scripts" section. Rename your initial script and add a new compile script
+
+//Change this 
+  "scripts": {
+    "c:s": "node-sass sass/main.scss css/style.css -w"
+  },
+
+//To this
+ "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+  },
+
+2. Then run command  <npm run compile:sass> that will create a new css file "style.comp.css"
+
+3. Then run command <npm install concat --save-dev>
+
+4. Go back into package.json and find the "scripts" section. Make sure your scripts appear as mine below.
+
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"
+  },
+
+5. Run command <npm run concat:css>
+
+6. Run command <npm install autoprefixer --save-dev>
+
+7. Run command <npm install postcss-cli --save-dev>
+
+8. Go back into package.json and find the "scripts" section. Make sure your scripts appear as mine below.
+
+ "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css"
+  },
+
+9. Run command <npm run prefix:css>
+
+10. Go back into package.json and find the "scripts" section. Make sure your scripts appear as mine below.
+
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
+  },
+
+11. Run command <npm run compress:css>
+
+12. Run command <npm install npm-run-all --save-dev>
+
+13. Go back into package.json and find the "scripts" section. Make sure your scripts appear as mine below.
+
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  
+14. Run command <npm run build:css>
+
+15. You are now ready to ship your application!
