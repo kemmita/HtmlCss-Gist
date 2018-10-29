@@ -1,0 +1,9 @@
+1. If the user does not have the ability to haver such as when using a tablet or phone, we must inlcude a media query to detect this so
+that our code responds appropriatley.
+
+    @media (max-width: 56.25em), (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color:  $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
