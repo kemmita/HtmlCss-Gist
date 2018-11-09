@@ -1,0 +1,5 @@
+1. We used to have to write php code to display error messages if someone did not fill out a specific input field, now we can use
+HTML5 to handle that issue!
+
+// Simply use the required keyword and it will not allow a form to be submitted without data
+<input type="text" name="car_name" id="car_name" class="form-control" required>
