@@ -1,0 +1,29 @@
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+<div class="row content">
+  <div class="main block">
+    <div class="post">
+      <h2>Blog Post 1</h2>
+      <p class="meta">Posted at 11:00 by admin</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque debitis delectus deleniti dolore ea fuga fugit odit ratione recusandae rem. Consectetur dolorem doloremque error facere nemo odio officia quidem reiciendis.</p>
+      <a href="#" class="button">Read More</a>
+    </div>
+
+    <article class="post">
+      <h2>Blog Post 1</h2>
+      <p class="meta">Posted at 11:00 by admin</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque debitis delectus deleniti dolore ea fuga fugit odit ratione recusandae rem. Consectetur dolorem doloremque error facere nemo odio officia quidem reiciendis.</p>
+      <a href="#" class="button">Read More</a>
+    </article>
+
+    <article class="post">
+      <h2>Blog Post 1</h2>
+      <p class="meta">Posted at 11:00 by admin</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque debitis delectus deleniti dolore ea fuga fugit odit ratione recusandae rem. Consectetur dolorem doloremque error facere nemo odio officia quidem reiciendis.</p>
+      <a href="#" class="button">Read More</a>
+    </article>
+  </div>
+</div>
