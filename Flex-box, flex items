@@ -1,0 +1,55 @@
+1. HTML
+
+<div class="container">
+  <div class="items i1">1</div>
+  <div class="items i2">2</div>
+  <div class="items i3">3</div>
+  <div class="items i4">4</div>
+  <div class="items i5">5</div>
+</div>
+
+2. CSS
+
+// Set basic styling to page
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Set container apropriatley
+.container{
+  background-color: #ccc; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+//not nessecary just adding some style.
+.items {
+  background-color: #f1425d;
+  padding: 40px;
+  margin: 10px;
+}
+// The most powerful thing here is the flex percentage, based off of 100% we can divide the sizes up as we see fit.
+// You can use order on flex items to display them in a differnt order, "-1" would ensure this item would be first
+.i4{
+  order: -1;
+  flex: 10%;
+}
+// Order 1 will make this item the last in line.
+.i5{
+  align-self: center;
+  order: 1;
+  flex: 40%;
+}
+.i3{
+  flex: 10%;
+}
+.i2{
+  flex: 10%;
+}
+.i1{
+  flex: 30%;
+}
