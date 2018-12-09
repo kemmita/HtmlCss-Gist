@@ -21,10 +21,14 @@
 .container{
   background-color: #ccc; 
   display: flex;
+  height: 800px;
   flex-direction: row; 
   justify-content: space-evenly;
   padding: 40px;
   flex-wrap: wrap;
+  /*if you use flex-wrap, you can use align-content. which will place all of your flex rows as you command, so if you want them
+  all to appear in the center, then set it to center, you can also use flex-start, flex-end, and space-between.*/
+  align-content:  center;
 }
 
 .items {
