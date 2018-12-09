@@ -1,0 +1,8 @@
+1. Typically with SASS, we will have a few different files, for example we will create _base.scss, _layout.scss, _components.scss
+2. If we want the files above to work, we will need to include them within the mani.scss file. 
+
+// mains.scss
+
+@import "base";
+@import "layout";
+@import "components";
