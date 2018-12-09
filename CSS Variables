@@ -1,0 +1,13 @@
+1. To create a css variable, create it in the root
+
+:root{
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+}
+
+2. To use the vartiables, call on them like so
+
+.name{
+     color: var(--color-primary-dark);
+ }
