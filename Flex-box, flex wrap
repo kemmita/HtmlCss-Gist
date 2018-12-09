@@ -1,0 +1,51 @@
+1. Flex wrap allows your page to be responsive.
+
+// HTML
+
+<div class="container">
+  <div class="items i1">1</div>
+  <div class="items i2">2</div>
+  <div class="items i3">3</div>
+  <div class="items i4">4</div>
+  <div class="items i5">5</div>
+</div>
+
+//CSS
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: #ccc; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.items {
+  background-color: #f1425d;
+  padding: 40px;
+  margin: 10px;
+}
+
+.i4{
+  flex: 10%;
+}
+
+.i5{
+  flex: 40%;
+}
+.i3{
+  flex: 10%;
+}
+.i2{
+  flex: 10%;
+}
+.i1{
+  flex: 30%;
+}
