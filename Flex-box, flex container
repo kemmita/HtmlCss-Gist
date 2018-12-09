@@ -1,0 +1,38 @@
+1. HTML
+<div class="container">
+  <div class="items">1</div>
+  <div class="items i2">2</div>
+  <div class="items">3</div>
+  <div class="items">4</div>
+  <div class="items">5</div>
+</div>
+ 2. CSS
+ *{
+  margin: 0;
+  padding: 0;
+  /*Remember when not working with frameworks, to set your box-sizing to border-box*/
+  box-sizing: border-box;
+}
+ .container{
+  background-color: #ccc;
+  /*display must be set to flex*/
+  display: flex;
+  /*this can also be set to column for them to sit on top of eachother we can also do row-reverse and column-reverse to reverse the order 
+  of the items.*/
+  flex-direction: row;
+  /*it is a good idea to used align-items when you have one item that is larger than the rest. we can use values such as flex-end 
+  flex-start and center to make sure all looks right.*/
+  align-items: flex-end;
+  /*space-between will evenly distribute the space between our elemenets within our container, we can also remove space-between and set 
+  it to center to center the items. space-evenly is great and can at times look better than space-between. flex-start will have all 
+  items at the left of the screen and flex-end will push all elements to the right.*/
+  justify-content: center; 
+}
+ .items {
+  background-color: #f1425d;
+  padding: 40px;
+  margin: 10px;
+}
+.i2{
+  height: 200px;
+}
