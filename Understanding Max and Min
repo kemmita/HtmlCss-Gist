@@ -1,0 +1,11 @@
+1. We will use min-height to understand min
+
+// no matter what the minimum height will never drop below 100vh
+min-height: 100vh;
+
+
+2. We will use max-width to understand max
+
+// no matter what the max-width will never expand beyond 120rem the container will decrease if there is not enough space to display
+the 120 rem or 1200px.
+max-width: 120rem;
