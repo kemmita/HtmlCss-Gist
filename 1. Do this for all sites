@@ -1,6 +1,14 @@
 1. Adding the code below will help your site responde better to all browsers
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; 
 }
+
