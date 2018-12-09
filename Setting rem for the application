@@ -1,0 +1,4 @@
+1. Now we can use rem throughout the entire application this will help us with the responsiveness of the application.
+html {
+  font-size: 62.5%; //1rem = 10px this goes for all sizing, not just font-size.
+}
