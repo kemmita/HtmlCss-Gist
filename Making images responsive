@@ -1,0 +1,9 @@
+1. To have an image respond, make sure to always use percentages for size.
+
+// We set the parent to flex and then images to width 100%;
+gallery{
+  display: flex;
+ &__photo{
+   width: 100%;
+ }
+}
