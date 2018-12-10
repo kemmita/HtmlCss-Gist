@@ -34,22 +34,23 @@
 }
 // The most powerful thing here is the flex percentage, based off of 100% we can divide the sizes up as we see fit.
 // You can use order on flex items to display them in a differnt order, "-1" would ensure this item would be first
+// The inital two "0" is for grow and shrink, set them to 0.
 .i4{
   order: -1;
-  flex: 10%;
+  flex: 0 0 10%;
 }
 // Order 1 will make this item the last in line.
 .i5{
   align-self: center;
   order: 1;
-  flex: 40%;
+  flex: 0 0 40%;
 }
 .i3{
-  flex: 10%;
+  flex: 0 0 10%;
 }
 .i2{
-  flex: 10%;
+  flex: 0 0 10%;
 }
 .i1{
-  flex: 30%;
+  flex: 0 0 30%;
 }
