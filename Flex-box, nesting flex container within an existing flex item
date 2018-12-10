@@ -1,0 +1,13 @@
+1. From the code below we can gather that the input class is a flex item as it is utilizing the flex-basis or shorthand "flex"
+the search element is taking up 40% of the original flex-container. Inside of this flex item we have more items that need to be aligned, 
+so we will know need to make this flex item into a flex container, both can be done at the same time.
+
+.search {
+  // flex item code
+  flex: 0 0 40%;
+  
+  //flex container code.
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
