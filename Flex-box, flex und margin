@@ -1,0 +1,23 @@
+When using flex box, we can combine it with margin to create some reall cool  grids. 
+
+// flex container
+.detail{
+    display: flex;
+}
+
+
+
+// flex items
+.description{
+    background-color: orangered;
+    flex: 60%;
+    margin-right: 4.5rem;
+    margin-left: 4.5rem;
+}
+
+.user-reviews{
+  background-color: greenyellow;
+  flex: 40%;
+  margin-right: 4.5rem;
+  margin-left: 4.5rem;
+}
