@@ -1,0 +1,11 @@
+1. html
+
+  <p class="paragraph">
+    Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+  </p>
+
+2. css
+
+.paragraph:not(:last-child){
+    margin-bottom: 2rem;
+}
