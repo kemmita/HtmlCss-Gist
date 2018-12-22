@@ -1,0 +1,43 @@
+1. HTML
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="small-box-1">small vbaox 1</div>
+  <div class="small-box-2">small box 2</div>
+  <div class="small-box-3">small box 3</div>
+  <div class="main-content">main content</div>
+  <div class="sidebar">sidebar</div>
+  <div class="footer">footer</div>  
+</div>
+
+2. CSS
+
+.container{
+  text-align: center;
+  max-width: 1000px;
+  padding: 5px;
+  border: 3px solid green;
+  margin: 30px auto;
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px;
+  grid-gap:15px;
+  & > *{
+    background-color: orange;
+    font-size: 30px;
+  }
+  // We use the grid lines to place the elements, you can view the grid lines, by using firefox dev tools.
+  .header{
+    grid-column: 1/5;
+  }
+  .sidebar{
+    grid-row: 2/4;
+    grid-column: 4/5;
+  }
+  .main-content{
+     grid-column: 1/4;
+  }
+   .footer{
+     grid-column: 1/5;
+  }
+}
