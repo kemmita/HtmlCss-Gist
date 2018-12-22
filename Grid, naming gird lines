@@ -1,0 +1,56 @@
+1. HTML
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="small-box-1">small vbaox 1</div>
+  <div class="small-box-2">small box 2</div>
+  <div class="small-box-3">small box 3</div>
+  <div class="main-content">main content</div>
+  <div class="sidebar">sidebar</div>
+  <div class="footer">footer</div>  
+</div>
+
+2. SCSS
+
+Row = = and column = ||
+
+.container{
+  text-align: center;
+  max-width: 1000px;
+  padding: 5px;
+  border: 3px solid green;
+  margin: 30px auto;
+  display: grid;
+  //Using our max-width declared above, we can distribute our width as we please we will apply names to the rows and determine how much
+  ppx they will recieve. The first row we create is called header-start and it obtains a value of 100px to close this row the ending 
+  name will be header-end. Reference below to see how they are used.
+  grid-template-rows: 
+    [header-start] 100px [header-end boxes-start] 
+    200px [boxes-end main-start] 400px [main-end footer-start] 100px [footer-end];
+  
+  //Using the repeat method is a bit different, our first 3 columns, we want to apply exactly 1fr. To assign a name to each column,
+  we will use col-start and place 1fr before col-end, to use these values in the code, simply use col-start 1 or 2 or 3.
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+  grid-gap:15px;
+  & > *{
+    background-color: orange;
+    font-size: 30px;
+  }
+  .header{
+    grid-row: header-start / header-end;
+    grid-column: col-start 1/ grid-end;
+  }
+  .sidebar{
+    grid-row: boxes-start / main-end;
+    grid-column: col-end 3/ grid-end;
+  }
+  .main-content{
+     grid-row: main-start/main-end;
+     grid-column: col-start 1/ col-end 3;
+  }
+   .footer{
+     grid-row: footer-start/footer-end;
+     grid-column: col-start 1/ grid-end;
+  }
+
+}
