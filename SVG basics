@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+    <svg width="500px" height="500px">
+        <rect width="100px" height="100px" fill="red" stroke="blue" stroke-width="3px" x="25" y="25"></rect>
+        <circle r="50" fill="blue" stroke="pink" stroke-width="3px" cx="200px" cy="200px"></circle>
+        <ellipse rx="200" ry="100" cx="300" cy="300" fill="black"></ellipse>
+        <line x1="200" y1="5" x2="200" y2="200" stroke="pink" stroke-width="3"></line>
+      <!--adding text to an svg-->
+        <text x="50" y="50" fill="pink" font-size="30">Hey Girl Hey</text>
+
+      <!--here we can create a definition and call and that def as many times as we want. But we can only create one def-->
+        <defs>
+          <circle r="50" fill="blue" cx="0" cy="0" id="circ"></circle>
+        </defs>
+      <!--we call the def two times below and give them different cords-->
+        <use xlink:href="#circ" x="100" y="200"></use>
+        <use xlink:href="#circ" x="300" y="300"></use>
+
+      <!--below we create a group whereas with defs we could only define one element, inside of a group we can define several and call the group one time.-->
+        <g id="rectangle">
+          <rect width="100" height="100" fill="blue" x=""></rect>
+          <rect width="100" height="100" fill="green" x="100"></rect>
+        </g>
+        <use xlink:href="rectangle"></use>
+    </svg>
+    </body>
+  </html>
