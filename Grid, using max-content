@@ -1,0 +1,54 @@
+1.HTML
+<div class="container">
+  <div class="item item--1">one</div>
+  <div class="item item--2">teo</div>
+  <div class="item item--3">three</div>
+  <div class="item item--4">four</div>
+  <div class="item item--5">five</div>
+  <div class="item item--6">six</div>
+  <div class="item item--7">seven</div>
+  <div class="item item--8">eight</div>
+</div>
+
+2.CSS
+.container{
+  background-color: grey;
+  margin: 30px auto;
+  max-width: 1000px;
+  text-align: center;
+  display: grid;
+  
+  grid-template-rows: repeat(2, 150px);
+  //using max-content will ensure that only enough space is used to display the content within the box.
+  grid-template-columns: max-content 1fr 1fr max-content;
+  
+  .item{
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    &--1{
+      background-color: pink;
+    }
+    &--2{
+      background-color: purple;
+    }
+    &--3{
+      background-color: red;
+    }
+    &--4{
+      background-color: orangered;
+    }
+    &--5{
+      background-color: yellow;
+    }
+    &--6{
+      background-color: blue;
+    }
+    &--7{
+      background-color: green;
+    }
+    &--8{
+      background-color: black;
+    }
+  }
+}
