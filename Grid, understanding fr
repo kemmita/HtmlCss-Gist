@@ -1,0 +1,24 @@
+1. We could do this to create 2 columns of 3 equal sized boxes
+
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns:  repeat(3, 33.3);
+  grid-gap: 20px;
+  
+2. Instead we can use fr for absoulute sizing 
+
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns:  repeat(3, 1fr);
+  grid-gap: 20px;
+
+3. if we wanted to have a grid of 2 rows and 3 columns, and the 2nd column to be double the size of that of the column of that from the 
+left and the right, then we can use fr to create this
+
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  // the box to the left and the right of the middle box will be exaclty half the size as 1 is exactl half of 2.
+  grid-template-columns:  1fr 2fr 1fr;
+  grid-gap: 20px;
+  
+  
