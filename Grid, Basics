@@ -1,0 +1,64 @@
+1. We will have a container of 6 items inside. We want 2 rows and 3 columns, 2*3 = 6, so it should be a perfect fit.
+
+2.HTML
+
+<div class="container">
+  <div class="item item--1">1: Orange</div>
+  <div class="item item--2">2: Green</div>
+  <div class="item item--3">3: Violate</div>
+  <div class="item item--4">4: Pink</div>
+  <div class="item item--5">5: Blue</div>
+  <div class="item item--6">6: Brown</div>
+</div>
+
+3. SCSS
+
+.container{
+  background-color: #eee;
+  width: 1000px;
+  margin: 30px auto;
+  
+  // set display to grid
+  display: grid;
+  // Here we set the size of the 2 rows
+  grid-template-rows: 150px 100px;
+  // Here we set the number of columns
+  grid-template-columns:  150px 150px 150px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  
+  //only use grid-gap if you want the row and column gap to be of the same size.
+  //grid-gap: 20px;
+}
+
+//It appears nothing needs to be done to the items below.
+.item{
+  padding: 20px;
+  font-size: 30px;
+  font-family: san-serif;
+  color: white;
+  
+  &--1{
+    background-color: orange;
+  }
+  
+   &--2{
+    background-color: green;
+  }
+  
+   &--3{
+    background-color: violet;
+  }
+  
+   &--4{
+    background-color: pink;
+  }
+  
+   &--5{
+    background-color: blue;
+  }
+  
+   &--6{
+    background-color: brown;
+  }
+}
