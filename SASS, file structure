@@ -1,0 +1,85 @@
+1. HTML
+ <body class="container">
+        <div class="sidebar">
+            sidebar
+        </div>
+        <header class="header">
+            Header
+        </header>
+        <div class="realtors">
+            Relators
+        </div>
+        <section class="features">
+            Features
+        </section>
+
+        <div class="story__pictures">
+            story pictures
+        </div>
+        <div class="story__content">
+           story content
+        </div>
+        <section class="homes">
+            Homes
+        </section>
+        <section class="gallery">
+            gallery
+        </section>
+        <footer class="footer">
+            footer
+        </footer>
+    </body>
+
+2. First we will need to have a direcotry titled sass.
+3. inside of sass, create a main.scss file inside this file we will import all of the sass files
+@import "base";
+@import "typography";
+@import "sidebar";
+@import "header";
+@import "realtors";
+@import "features";
+@import "story";
+@import "homes";
+@import "gallery";
+@import "footer";
+
+4. Next create a _base.scss file in this file you will have styles for the html, body, and *. We will also declare are sass vars here.
+
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+}
+body{
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+5. For the remainder, reference the html file and create a scss file for each div/section/header/footer.
+if you look at the main.scss file, you will see that we imported all of them.
+
+
