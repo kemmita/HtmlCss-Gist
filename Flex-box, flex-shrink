@@ -1,0 +1,35 @@
+1. when your elements begin to shrink, you can set the flex-shrink property so that your elements shrink at a different rate.
+
+//HTML
+<article>
+    <h2 style="text-align: center">Flex Container</h2>
+    <div class="flex-container">
+        <div class="flex-container__flex-item"><h3>one</h3></div>
+        <div class="flex-container__flex-item--2"><h3>two</h3></div>
+    </div>
+</article>
+
+2. We want the second element to shrink 10 times faster than the first element, we can do this like below
+
+.flex-container{
+  max-width: 800px;
+  height: 500px;
+  background-color: #1d643b;
+  margin: 0 auto;
+  display: flex;
+
+  &__flex-item{
+    border: 2px solid pink;
+    padding: 10px;
+    margin: 2px;
+    width: 300px;
+  }
+  &__flex-item--2{
+    border: 2px solid pink;
+    padding: 10px;
+    margin: 2px;
+    width: 300px;
+    flex-shrink: 10;
+  }
+
+}
