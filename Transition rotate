@@ -1,0 +1,10 @@
+1. we can do a 2d rotate as seen below.
+
+img{
+   margin-top: 20rem;
+   display: block;
+   transition: all 1s;
+ }
+img:hover{
+  transform: rotate(720deg);
+}
