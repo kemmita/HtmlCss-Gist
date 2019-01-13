@@ -1,0 +1,10 @@
+1. Skew can create some great effects, typicallu not in conjunction with hover. 
+
+img{
+   margin-top: 20rem;
+   display: block;
+   transition: all 2s;
+ }
+img:hover {
+  transform: skewy(50deg);
+}
