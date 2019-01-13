@@ -18,3 +18,27 @@ the element.
     box-shadow: 0px 10px 20px rgba(0,0,0,.2);
 }
 
+
+3. If we wanr to transition many different properties within the element, we can use all for the transition duration or we can seperate
+the properties and append values such as ease to hold off on the transition until the other has finished
+
+
+button {
+  height: 9rem;
+  width: 29rem;
+  font-size: 2.8rem;
+  color: white;
+  border: none;
+  background-color: blue;
+  //we will change the background-color over the duration of 5s. if we want the width to run after that is complete, we 
+  //can use "ease 5s" You can see that we wait until the width is done to transition the border-radius
+  transition: background-color 5s, color .2s, width 10s ease 5s,
+              border-radius 2s ease-in-out 10s;
+}
+
+button:hover{
+  background-color: green;
+  color: #000;
+  width: 60rem;
+  border-radius: 12%;
+}
