@@ -1,0 +1,13 @@
+1. If we want to make an image larger or smaller on hover, we can use the scale function
+
+img{
+  margin-top: 20rem;
+  display: block;
+  transition: all 2s;
+}
+
+//this will scale the image to be two times its original size.
+img:hover{
+  transform:  scale(2);
+}
+
