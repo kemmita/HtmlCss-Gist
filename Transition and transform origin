@@ -1,0 +1,11 @@
+1. if we want to have an element rotate from a specific area, such as the top, or bottom of the element, we can use transform-origin.
+
+img{
+   margin-top: 20rem;
+   display: block;
+   transition: all 1s ease-in-out;
+  transform-origin: bottom;
+ }
+img:hover {
+  transform: rotate(180deg);
+}
