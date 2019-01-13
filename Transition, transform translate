@@ -1,0 +1,14 @@
+1. transform translate is used to move the element on the y axis or on the x axis. You can declare both at the same time, or individually
+as I do below.
+
+img{
+  margin-top: 20rem;
+  display: block;
+  transition: all 2s;
+}
+//the image will move -15 rem on the y axis, making the image appear as if it is moving to the top of the screen.
+img:hover{
+  transform:  translateY(-15rem);
+}
+
+
