@@ -1,0 +1,84 @@
+1. html/css/TW
+
+      @if(!$coupons == null)
+                <div id="mobile-coupon-list" class="flex  w-full sm:w-full md:w-full lg:w-full xl:w-full scrolling-touch overflow-scroll bg-grey-lighter p-2
+                        py-2 px-1 sm:overflow-hidden sm:py-4 sm:px-2" style="overflow-x: scroll; max-height: 340px; overflow-y: hidden; ">
+                    @foreach($coupons as $coupon)
+                        <div dusk="coupon-card" class="flex-no-shrink shadow cursor-pointer w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/5 xl:w-1/5  mr-2" style="height: 300px;" id="ccard">
+                            <div class="rounded-sm bg-white h-full p-2 lato" id="coupon-card-body">
+                                <small class="verified-coupon-card" style="text-align: left!important;">Verified</small>
+                                <p id="card-discount-amount">10%</p><p id="card-discount-amount-text">Off</p>
+                                <a id="coupon-card-label" class="block text-center text-grey-darker" rel="nofollow">{{$coupon['label']}}</a>
+
+                                <button id="coupon-button" class="bg-blue rounded-sm text-white p-2">Get Code</button>
+                            </div>
+                        </div>
+                        @endforeach
+                </div>
+                <div style="margin: 0 auto;">
+                    <button id="left-button"><span class="tw-bg-white tw-opacity-75 hover:tw-opacity-100  tw-cursor-pointer tw-text-2xl tw-text-black tw-p-4"> < </span></button>
+                    <button id="right-button"><span class="tw-bg-white tw-opacity-75 hover:tw-opacity-100  tw-cursor-pointer tw-text-2xl tw-text-black tw-p-4"> > </span></button>
+                </div>
+                @endif
+  
+  
+  //CSS
+  
+  
+  @media only screen and (max-width: 800px) {
+    #mobile-coupon-list::-webkit-scrollbar-thumb {background: #2B71D0;}
+    #right-button{display: none;}
+    #left-button{display: none;}
+    #stats-title{margin-top: 15px;}
+}
+#right-button{
+    background-color: #2B71D0;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    transition: all .2s;
+}
+#right-button:hover{
+    background-color: white;
+    color: #2B71D0;
+    font-weight: bolder;
+    border: none;
+}
+#right-button:active{border: none;}
+#left-button{
+    background-color: #2B71D0;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all .2s;
+}
+#left-button:hover{
+    background-color: white;
+    color: #2B71D0;
+    font-weight: bolder;
+}
+  
+   
+   
+
+2. JS
+
+   <script>
+        $(function () {
+            $('#right-button').click(function() {
+                event.preventDefault();
+                $('#mobile-coupon-list').animate({
+                    scrollLeft: "+=300px"
+                }, "slow");
+            });
+
+            $('#left-button').click(function() {
+                event.preventDefault();
+                $('#mobile-coupon-list').animate({
+                    scrollLeft: "-=300px"
+                }, "slow");
+            });
+        });
+    </script>
