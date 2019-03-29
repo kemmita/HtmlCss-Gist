@@ -1,0 +1,15 @@
+1. We have a stiuation where w will recieve n ammount of elements, if the elements exceed 5, we will need to apply margin-top: 4rem
+to the remaining elements.
+
+    .cube-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .cube {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(n+6){
+          margin-top: 4rem;
+        }
+      }
+    }
